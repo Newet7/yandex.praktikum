@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* О браузерных стилях
+Когда вы пишете код страницы, браузер сам назначает элементам стили. Например, делает заголовок первого уровня больше последующих и оставляет отступы вокруг контента. Но как убедиться, что во всех браузерах всё одинаково? Никак — если дополнительно кое-что не поменять.
+Вариант 1
+Вручную переписать все основные стили. Это самый безошибочный, хоть и трудоёмкий подход: в Яндексе делают именно так. Такой способ — часть методологии БЭМ, которую мы начнём изучать уже в этом спринте.
+Вариант 2
+Сбросить всё до отправной точки — сделать элементы такими, будто браузер не задавал им собственные параметры. Свои стили придётся писать с нуля.
+Этот подход предложил Эрик Мейер — создатель файла reset.css. Когда мы подключаем этот файл, большинство текстовых элементов страницы становятся одинаковыми, а затем мы сами определяем их стили.
+Способ удобный, но его часто критикуют: reset.css очень жёстко обходится с элементами, нивелируя их особенности. Это может вызвать неожиданное поведение.
+Всегда подключайте reset.css в коде выше собственных стилей, иначе стили из reset.css окажутся приоритетнее и заменят ваши: */
+<head>
+    <!-- метатеги и title -->
+    <link rel="stylesheet" href="reset.css"> <!-- Сначала reset.css -->
+    <link rel="stylesheet" href="style.css"> <!-- Потом свои стили -->
+</head> 
+/* Reset.css можно скопировать на компьютер или подключить из интернета: https://meyerweb.com/eric/tools/css/reset/ */
+
+/* Вариант 3
+Нормализовать стили — убрать различия отображения в разных браузерах. Для этого Николас Галлахер создал файл normalize.css, который описывает одинаковое поведение для всех браузеров, а не убирает отличия между элементами. Этот подход мы и будем использовать в учёбе.
+Подключайте normalize.css выше своих стилей, но будьте внимательны. У некоторых элементов — таких как заголовки, параграфы или пункты списка — сохранятся стили, которые вы не писали. Их придётся вручную переписывать в CSS.
+Файл normalize.css удобен тем, что его можно не использовать целиком, — он разделён на блоки. Стили текста собраны в одну группу, стили форм — в другую. Можно удалить стили для элементов, которых нет и не будет в проекте, и сайт будет загружаться быстрее.
+Всегда подключайте normalize.css в коде выше собственных стилей, иначе будет как с reset.css: они «перекроют» ваши. */
+<head>
+  <!-- метатеги и title -->
+  <link rel="stylesheet" href="normalize.css"> <!-- Сначала normalize.css -->
+  <link rel="stylesheet" href="style.css"><!-- Потом свои стили -->
+</head> 
+/* Normalize.css можно сохранить на компьютере или подключить в интернете: https://necolas.github.io/normalize.css/ */
+

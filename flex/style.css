@@ -7,14 +7,30 @@
   display: flex;
   max-width: 1330px;
   min-width: 1280px;
+}
+
+.centered-block {
   margin: auto;
 }
 
+.flex-row_reversed {
+  flex-direction: row-reverse;
+}
+
+.page__menu {
+  margin: 40px auto;
+}
+
 .header__link {
-  margin: auto;
   font-size: 28px;
   text-decoration: none;
   color: #10191e;
+}
+
+.content__title {
+  font-size: 34px;
+  margin: 0 0 40px;
+  text-align: center;
 }
 
 .project {
@@ -76,7 +92,6 @@
   flex-wrap: wrap;
   max-width: 1330px;
   min-width: 1280px;
-  margin: 40px auto;
 }
 
 .project_name_how-to-study {
@@ -100,7 +115,6 @@
   justify-content: center;
   max-width: 1330px;
   min-width: 1280px;
-  margin: auto;
 }
 
 .footer__logo {
@@ -116,7 +130,6 @@
 .content {
   max-width: 1330px;
   min-width: 1280px;
-  margin: auto;
 }
 
 .menu__link {
